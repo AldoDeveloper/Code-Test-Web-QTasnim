@@ -1,0 +1,34 @@
+@import url('./card.style.css');
+@import url('./mode.style.css');
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-left: 10%;
+    /* Ruang untuk ikon */
+    transition: padding-left 0.3s ease;
+    /* Transisi untuk efek perubahan posisi ikon */
+}
+
+.input-wrapper input::placeholder {
+    color: transparent;
+}
+
+.input-wrapper .fas.fa-search {
+    position: absolute;
+    left: 10%;
+    /* Posisi awal ikon */
+    top: 50%;
+    color: #b8b8b8;
+    transform: translateY(-50%);
+    transition: top 0.3s ease;
+    /* Transisi untuk efek perubahan posisi ikon */
+}
+
+.input-wrapper input:focus+.fas.fa-search {
+    color: darkslategrey;
+    top: -10px;
+    /* Perubahan posisi ikon saat input dalam keadaan fokus */
+}

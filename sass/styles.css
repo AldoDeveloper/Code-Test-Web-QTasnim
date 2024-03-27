@@ -1,0 +1,134 @@
+.a-bg-main-50 {
+  background: #eff9ff;
+}
+
+.a-bg-main-100 {
+  background: #dff1ff;
+}
+
+.a-bg-main-200 {
+  background: #b8e5ff;
+}
+
+.a-bg-main-300 {
+  background: #78d2ff;
+}
+
+.a-bg-main-400 {
+  background: #50c5ff;
+}
+
+.a-bg-main-500 {
+  background: #06a2f1;
+}
+
+.a-bg-main-600 {
+  background: #0081ce;
+}
+
+.a-bg-main-700 {
+  background: #0067a7;
+}
+
+.a-bg-main-800 {
+  background: #02578a;
+}
+
+.a-bg-main-900 {
+  background: #02578a;
+}
+
+.a-input-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.a-input-icon-wrapper input {
+  padding-left: 45px;
+  transition: padding-left 0.2 ease;
+  border: 0.7px solid var(--main--color);
+  border-radius: 10px;
+  color: var(--surface-500);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.a-input-icon-wrapper input.a-large {
+  padding-top: 13px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+}
+.a-input-icon-wrapper input:focus {
+  box-shadow: 2px 2px 2px 2px #b8e5ff;
+  outline: 0.7px solid var(--main--color);
+}
+.a-input-icon-wrapper input:active {
+  box-shadow: none;
+}
+.a-input-icon-wrapper input::-moz-placeholder {
+  color: var(--surface-500);
+  padding-left: 0;
+  font-size: 16px;
+  padding-top: 10px;
+  transform: translateY(1px);
+}
+.a-input-icon-wrapper input::placeholder {
+  color: var(--surface-500);
+  padding-left: 0;
+  font-size: 16px;
+  padding-top: 10px;
+  transform: translateY(1px);
+}
+.a-input-icon-wrapper .a-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 16px;
+  color: var(--surface-500);
+  transform: translateY(-50%);
+}
+
+.switch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--surface-300);
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  padding: 3px;
+  cursor: pointer;
+  transition: background 0.5 ease;
+  box-shadow: 1px 2px 2px 1px rgba(137, 137, 137, 0.5);
+}
+.switch.actived {
+  justify-content: flex-end;
+  background: #50c5ff;
+  box-shadow: 1px 2px 2px 1px rgba(6, 162, 241, 0.5);
+}
+.switch .switch-rounded {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.wraper-circular-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.wraper-circular-icon .icon {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.5 ease, top 0.5 ease;
+}
+.wraper-circular-icon .icon.actived {
+  position: absolute;
+  opacity: 1;
+  right: -10;
+  top: -8;
+  transition: opacity 0.5 ease, top 0.5 ease;
+}/*# sourceMappingURL=styles.css.map */

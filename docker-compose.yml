@@ -1,0 +1,23 @@
+version: '1.0'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - name=value
+
+    container_name: "admin-dasboard-react"
+    ports:
+      - 4000:4000
+    volumes:
+      - '/usr/src/admin-dasboard'
+    command: "npm run dev"
+  
+  db:
+    container_name: mysql_server_for_fron_end
+    image: mysql:latest
+    restart: always
+
+    environment:
+      - name=value

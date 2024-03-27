@@ -1,0 +1,17 @@
+.color {
+  color: red;
+}
+
+.theme {
+  position: relative;
+  display: inline-block;
+}
+.theme-dark {
+  color: white;
+}
+.theme-dark .test {
+  color: blue;
+}
+.theme-light {
+  color: darkslategrey;
+}/*# sourceMappingURL=App.module.css.map */

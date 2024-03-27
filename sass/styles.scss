@@ -1,0 +1,106 @@
+@import 'variable';
+
+$input-padding-global : ("top" : 10px, "right" : 10px, "bottom" : 10px);
+$input-border-global : .7px solid var(--main--color);
+$input-borderRadius-global : 10px;
+
+.a-input-icon-wrapper {
+
+    position: relative;
+    display: inline-block;
+
+    input {
+        padding-left: 45px;
+        transition: padding-left 0.2 ease;
+        border: $input-border-global;
+        border-radius: $input-borderRadius-global;
+        color: var(--surface-500);
+
+        @each $key, $value in $input-padding-global{
+            padding-#{$key} : $value
+        }
+
+        &.a-large {
+            padding: {
+                top: 13px;
+                right: 13px;
+                bottom: 13px;
+            }
+        }
+    }
+
+    input:focus {
+        box-shadow: 2px 2px 2px 2px #{$bg-main-200};
+        outline: 0.7px solid var(--main--color);
+    }
+
+    input:active {
+        box-shadow: none;
+    }
+
+    input::placeholder {
+        color: var(--surface-500);
+        padding-left: 0;
+        font-size: 16px;
+        padding-top: 10px;
+        transform: translateY(1px);
+    }
+
+    .a-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        font-size: 16px;
+        color: var(--surface-500);
+        transform: translateY(-50%);
+    }
+}
+.switch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--surface-300);
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    padding: 3px;
+    cursor: pointer;
+    transition: background 0.5 ease;
+    box-shadow: 1px 2px 2px 1px rgba($color: #898989, $alpha: 0.5);
+
+    &.actived{
+        justify-content: flex-end;
+        background: #{$bg-main-400};
+        box-shadow: 1px 2px 2px 1px rgba($color: $bg-main-500, $alpha: 0.5);
+    }
+
+    .switch-rounded{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+.wraper-circular-icon{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    .icon{
+        opacity: 0;
+        position: absolute;       
+        right: 0;
+        top: 0;
+        transition: opacity 0.5 ease, top 0.5 ease;
+
+        &.actived{
+            position: absolute;      
+            opacity: 1;
+            right: -10;
+            top: -8;
+            transition: opacity 0.5 ease, top 0.5 ease;
+        }
+    }
+}

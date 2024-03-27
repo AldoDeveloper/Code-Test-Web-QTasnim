@@ -1,0 +1,29 @@
+$bg-main-50  : #eff9ff;
+$bg-main-100 : #dff1ff;
+$bg-main-200 : #b8e5ff;
+$bg-main-300 : #78d2ff;
+$bg-main-400 : #50c5ff;
+$bg-main-500 : #06a2f1;
+$bg-main-600 : #0081ce;
+$bg-main-700 : #0067a7;
+$bg-main-800 : #02578a;
+$bg-main-900 : #02578a;
+
+$all_bg_class : (
+    "bg-main-50" : $bg-main-50,
+    "bg-main-100" : $bg-main-100,
+    "bg-main-200" : $bg-main-200,
+    "bg-main-300" : $bg-main-300,
+    "bg-main-400" : $bg-main-400,
+    "bg-main-500" : $bg-main-500,
+    "bg-main-600" : $bg-main-600,
+    "bg-main-700" : $bg-main-700,
+    "bg-main-800" : $bg-main-800,
+    "bg-main-900" : $bg-main-900,
+);
+
+@each $key, $value in $all_bg_class{
+    .a-#{$key}{
+        background: $value;
+    }
+}

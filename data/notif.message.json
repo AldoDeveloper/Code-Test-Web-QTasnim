@@ -1,0 +1,50 @@
+[
+    {
+        "id" : "1",
+        "name" : "Aldo Ratmawan",
+        "phone_number" : "+62808041204",
+        "message" : [
+            {
+                "uuid" : "49712419",
+                "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur reprehenderit eius excepturi. Eveniet in modi, obcaecati dicta voluptates animi!",
+                "created_at" : "10 Febuary 2024 20:08:40"
+            }
+        ]
+    },
+    {
+        "id" : "2",
+        "name" : "Budi Fediansah",
+        "phone_number" : "+628024242924",
+        "message" : [
+            {
+                "uuid" : "4962363674",
+                "text" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reprehenderit inventore ea veniam nemo fuga.",
+                "created_at" : "12 Febuary 2024 20:08:40"
+            }
+        ]
+    },
+    {
+        "id" : "3",
+        "name" : "Otong Kurniawan",
+        "phone_number" : "+6281289127",
+        "message" : [
+            {
+                "uuid" : "990125881",
+                "text" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reprehenderit inventore ea veniam nemo fuga.",
+                "created_at" : "12 Maret 2024 10:02:30"
+            }
+        ]
+    },
+    {
+        "id" : "4",
+        "name" : "Budi Fediansah",
+        "phone_number" : "+628024242924",
+        "message" : [
+            {
+                "uuid" : "4962363674",
+                "text" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reprehenderit inventore ea veniam nemo fuga.",
+                "created_at" : "12 Febuary 2024 20:08:40"
+            }
+        ]
+    }
+]

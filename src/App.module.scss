@@ -1,0 +1,25 @@
+
+$color-test : red;
+
+.color{
+    color: red
+}
+
+.theme{
+
+    position: relative;
+    display: inline-block;
+
+    &-dark{
+        $color-test: blue;
+        color: white;
+
+        .test{
+            color: $color-test;
+        }
+    }
+
+    &-light{
+        color: darkslategrey;
+    }
+}
